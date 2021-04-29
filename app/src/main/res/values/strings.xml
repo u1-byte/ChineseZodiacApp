@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ChineseZodiac</string>
+    <string name="strengths">Strengths</string>
+    <string name="weaknesses">Weaknesses</string>
+    <string name="relationships">Relationships</string>
+    <string name="zodiac_img">zodiac_img</string>
+    <string name="attribute">Illustration designed by rawpixel.com / Freepik</string>
+    <string name="profile_name">Yuma Anugrah Virya Gunawan</string>
+    <string name="profile_email">a0141364@bangkit.academy</string>
+    <string name="splash_img">splash_img</string>
+    <string name="btn_to_about">btn_to_about</string>
+    <string name="title">Chinese Zodiac</string>
+</resources>

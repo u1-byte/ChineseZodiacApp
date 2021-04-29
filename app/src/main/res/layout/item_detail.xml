@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/zodiac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Your Zodiac" />
+
+        <TextView
+            android:id="@+id/personality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Title2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/zodiac"
+            tools:text="Personality" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/red"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/personality">
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Desc"
+                tools:text="@tools:sample/lorem/random" />
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/img_zodiac"
+            android:layout_width="190dp"
+            android:layout_height="450dp"
+            android:contentDescription="@string/zodiac_img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView3"
+            tools:src="@drawable/img_dragon" />
+
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="450dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@color/dark_red" />
+
+                <TextView
+                    style="@style/SubTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strengths" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/strength_1"
+                style="@style/SubContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Strength_1" />
+
+            <TextView
+                android:id="@+id/strength_2"
+                style="@style/SubContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Strength_2" />
+
+            <TextView
+                android:id="@+id/strength_3"
+                style="@style/SubContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Strength_3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@color/dark_red" />
+
+                <TextView
+                    style="@style/SubTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/weaknesses" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/weak_1"
+                style="@style/SubContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Weaknesses_1" />
+
+            <TextView
+                android:id="@+id/weak_2"
+                style="@style/SubContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Weaknesses_2" />
+
+            <TextView
+                android:id="@+id/weak_3"
+                style="@style/SubContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Weaknesses_3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@color/dark_red" />
+
+                <TextView
+                    style="@style/SubTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/relationships" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/relation_1"
+                style="@style/SubContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Relationship_1" />
+
+            <TextView
+                android:id="@+id/relation_2"
+                style="@style/SubContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Relationship_2" />
+
+            <TextView
+                android:id="@+id/relation_3"
+                style="@style/SubContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Relationship_3" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/attribute"
+            style="@style/Attribute"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
